@@ -28,6 +28,12 @@ function Details() {
                     <img src="/images/group-icon.png" alt="" />
                 </GroupBtn>
             </Controls>
+            <Subtitle>
+                2018 Blah Blah Blah Blah
+            </Subtitle>
+            <Description>
+            The current story takes place 800 years after the Great Kingdom fall and the World Government takes over the world stage, 22 years after Gol D. Roger the Pirate King was executed and inspires the Golden Pirate Age. After his death, countless of Pirates sets out to find his greatest treasure One Piece. Initially the story begins before the Battle of Marineford. A boy name Monkey D. Luffy from East Blue who was aged seven was inspired by the pirate Shanks who turns out to be the Cabin Boy of Gol D. Roger and during this time he accidentally ate the Gomu Gomu no Mi. He yarns to become a Pirate King and ten years later he sets out from Foosha Village.
+            </Description>
         </Container>
     )
 }
@@ -119,4 +125,18 @@ const AddBtn = styled.button`
 `
 const GroupBtn = styled(AddBtn)`
     background-color: black;
+`
+
+const Subtitle = styled.div`
+    color: rgb(249, 249, 249);
+    font-size: 15px;
+    min-height: 20px;
+    margin-top: 26px;
+`
+
+const Description = styled.div`
+    line-height: 1.4;
+    font-size: 20px;
+    margin-top: 16px;
+    color: rgb(249, 249, 249);
 `
