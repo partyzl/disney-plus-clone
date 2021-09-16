@@ -14,16 +14,18 @@ function Details() {
 
             <Controls>
                 <PlayBtn>
-
+                    <img src="/images/play-icon-black.png" alt="" />
+                    <span>PLAY</span>
                 </PlayBtn>
                 <TrailerBtn>
-
+                    <img src="/images/play-icon-white.png" alt="" />
+                    <span>TRAILER</span>
                 </TrailerBtn>
                 <AddBtn>
-
+                    <span>+</span>
                 </AddBtn>
                 <GroupBtn>
-
+                    <img src="/images/group-icon.png" alt="" />
                 </GroupBtn>
             </Controls>
         </Container>
@@ -68,18 +70,53 @@ const ImgTitle = styled.div`
 `
 
 const Controls = styled.div`
+    display: flex;
+    align-items: center;
 
 `
 
-const PlayBtn = styled.div`
+const PlayBtn = styled.button`
+    border-radius: 4px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    background: rgb (249, 249, 249);
+    border: none;
+    padding: 0 24px;
+    margin-right: 22px;
+    letter-spacing: 1.8px;
+    cursor: pointer;
 
+    &:hover{
+        background: rgba(198, 198, 198);
+    }
 `
-const TrailerBtn = styled.div`
-
+const TrailerBtn = styled(PlayBtn)`
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgb(249, 249, 249);
+    color: rgb(249, 249, 249);
 `
-const AddBtn = styled.div`
-
+const AddBtn = styled.button`
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 2px solid white;
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+    margin-right:16px;
+    
+    &:hover{
+        background: rgba(198, 198, 198);
+    }
+    span {
+        font-size: 33px;
+        color: white;
+    }
 `
-const GroupBtn = styled.div`
-
+const GroupBtn = styled(AddBtn)`
+    background-color: black;
 `
