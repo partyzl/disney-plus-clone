@@ -1,4 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+practicing with react and redux with CRA
+---
+# Disney + Clone Website
+https://my-disney.netlify.app/
+---
+- "/" Home Page
+- "/login" Login Page
+  - Havent done it yet but using firebase for google auth
+- "/details/:id" Information on movies you click on
+  - Not yet functional, will be once I pull data from database
+  - Can check out the layout of that page on "/details"
+
+
+
+
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
 
@@ -41,4 +56,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/). -->
