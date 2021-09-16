@@ -11,7 +11,7 @@ function App() {
         < Header />
         <Switch>
           <Route exact path="/"><Home/></Route>
-          <Route path="/detail"><Details/></Route>
+          <Route path="/details"><Details/></Route>
         </Switch>
       </Router>
     </div>
