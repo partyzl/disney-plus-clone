@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import {Header, Home, ImgSlider} from './components'
+import {Header} from './components'
+import {Home} from './pages'
 
 function App() {
   return (
     <div className="App">
       < Header />
       <Home />
-      <ImgSlider />
     </div>
   );
 }
