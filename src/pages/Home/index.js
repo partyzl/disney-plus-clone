@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import {ImgSlider, FranchiseIcons} from '../../components'
+import {ImgSlider, FranchiseIcons, Movies} from '../../components'
 
 function Home() {
     return (
         <Container>
             <ImgSlider />
             <FranchiseIcons />
+            <Movies />
         </Container>
     )
 }
