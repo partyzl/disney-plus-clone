@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import {Header, Home} from './components'
+import {Header, Home, ImgSlider} from './components'
 
 function App() {
   return (
     <div className="App">
       < Header />
       <Home />
+      <ImgSlider />
     </div>
   );
 }
