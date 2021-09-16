@@ -1,8 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
-import {ImgSlider, FranchiseIcons, Movies} from '../../components'
+import React, {useEffect} from 'react';
+import styled from 'styled-components';
+import {ImgSlider, FranchiseIcons, Movies} from '../../components';
 
 function Home() {
+
+
     return (
         <Container>
             <ImgSlider />
