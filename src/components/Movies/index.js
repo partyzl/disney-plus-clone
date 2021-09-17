@@ -5,90 +5,17 @@ import { useSelector } from 'react-redux';
 
 function Movies() {
 	const movies = useSelector(selectMovies);
-	console.log('Movies: ', movies);
+	//console.log('Movies: ', movies);
 
 	return (
 		<Container>
 			<h4>Recommended For You</h4>
 			<Content>
-				<Wrap>
-					<img
-						src="https://whatsondisneyplus.com/wp-content/uploads/2019/08/F9AF6461-24C0-4867-A9B1-7A7F04695FAE.png"
-						alt=""
-					/>
-				</Wrap>
-				<Wrap>
-					<img
-						src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6A81D0D62EE8343AC4D7A42225502D36264AB9A11D20D660A2C619051205F4B8/scale?width=1920&aspectRatio=1.78&format=png"
-						alt=""
-					/>
-				</Wrap>
-				<Wrap>
-					<img
-						src="http://media-s3-us-east-1.ceros.com/editorial-content/images/2019/11/07/4f4dc0d6ef242bc1ff5778f410b1e5f0/1942-bambi.png"
-						alt=""
-					/>
-				</Wrap>
-				<Wrap>
-					<img
-						src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CE355C31067E145D0C1140E70260A1E04B41F83660374BCBB1D07051582DE952/scale?width=1440&aspectRatio=1.78&format=png"
-						alt=""
-					/>
-				</Wrap>
-			</Content>
-			<h4>New Releases</h4>
-			<Content>
-				<Wrap>
-					<img
-						src="https://whatsondisneyplus.com/wp-content/uploads/2019/08/F9AF6461-24C0-4867-A9B1-7A7F04695FAE.png"
-						alt=""
-					/>
-				</Wrap>
-				<Wrap>
-					<img
-						src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6A81D0D62EE8343AC4D7A42225502D36264AB9A11D20D660A2C619051205F4B8/scale?width=1920&aspectRatio=1.78&format=png"
-						alt=""
-					/>
-				</Wrap>
-				<Wrap>
-					<img
-						src="http://media-s3-us-east-1.ceros.com/editorial-content/images/2019/11/07/4f4dc0d6ef242bc1ff5778f410b1e5f0/1942-bambi.png"
-						alt=""
-					/>
-				</Wrap>
-				<Wrap>
-					<img
-						src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CE355C31067E145D0C1140E70260A1E04B41F83660374BCBB1D07051582DE952/scale?width=1440&aspectRatio=1.78&format=png"
-						alt=""
-					/>
-				</Wrap>
-			</Content>
-			<h4>Popular</h4>
-			<Content>
-				<Wrap>
-					<img
-						src="https://whatsondisneyplus.com/wp-content/uploads/2019/08/F9AF6461-24C0-4867-A9B1-7A7F04695FAE.png"
-						alt=""
-					/>
-				</Wrap>
-				<Wrap>
-					<img
-						src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6A81D0D62EE8343AC4D7A42225502D36264AB9A11D20D660A2C619051205F4B8/scale?width=1920&aspectRatio=1.78&format=png"
-						alt=""
-					/>
-				</Wrap>
-				<Wrap>
-					<img
-						src="http://media-s3-us-east-1.ceros.com/editorial-content/images/2019/11/07/4f4dc0d6ef242bc1ff5778f410b1e5f0/1942-bambi.png"
-						alt=""
-					/>
-				</Wrap>
-				<Wrap>
-					<img
-						src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CE355C31067E145D0C1140E70260A1E04B41F83660374BCBB1D07051582DE952/scale?width=1440&aspectRatio=1.78&format=png"
-						alt=""
-					/>
-				</Wrap>
+				{movies.map((movie) => (
+					<Wrap key={movie.id}>
+						<img src={movie.cardImg} alt="" />
+					</Wrap>
+				))}
 			</Content>
 		</Container>
 	);
